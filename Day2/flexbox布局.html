@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox布局三栏解决方案</title>
+</head>
+<body>
+    <section class="layout flexbox">
+        <style>
+            .layout.flexbox {
+                margin-top: 20px;
+            }
+            .layout.flexbox .left-center-right {
+                display: flex;
+            }
+            .layout.flexbox .left{
+                width: 300px;
+                background: #6b98aa;
+            }
+            .layout.flexbox .center {
+                flex: 1;
+                height: 60vh;
+                background:pink;
+            }
+            .layout.flexbox .right {
+                flex: 1;
+                background: #f5f57e;
+            }
+        </style>
+         <h1>三栏布局</h1>
+         <article class="left-center-right"> 
+             <div class="left"> 
+                 <h2>左边</h2> 
+             </div>  
+             <div class="center">
+             <h2>flexbox解决方案</h2>
+             <p>
+                flexbox解决方案flexbox解决方案flexbox解决方案flexbox解决方案
+                flexbox解决方案flexbox解决方案flexbox解决方案flexbox解决方案
+                flexbox解决方案flexbox解决方案flexbox解决方案flexbox解决方案
+                flexbox解决方案flexbox解决方案flexbox解决方案flexbox解决方案
+                flexbox解决方案flexbox解决方案flexbox解决方案flexbox解决方案
+                flexbox解决方案flexbox解决方案flexbox解决方案flexbox解决方案
+             </p>
+             </div>
+             <div class="right">
+                 <h2>右边</h2>
+             </div>
+         </article>
+    </section>
+</body>
+</html>
